@@ -1,0 +1,20 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../../cursos/dsa"
+	},
+	{
+		"path": "../../../../.."
+	},
+	{
+		"path": "../twentytwentyfour"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "svn.ignoreMissingSvnWarning": true,
+    "liveServer.settings.multiRootWorkspaceName": "dayartscroche"
+  }
+}

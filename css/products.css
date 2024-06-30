@@ -1,0 +1,120 @@
+/* Lista de produtos */
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+@media (max-width: 800px) {
+  .products-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .products-list {
+    grid-template-columns: 1fr;
+  }
+}
+.products-list h2 {
+  margin: 10px 0px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+.products-list a {
+  display: grid;
+}
+.products-list a img {
+  width: 100%;
+}
+.product-info {
+  grid-area: 1/1;
+}
+.product-overlay {
+  opacity: 0;
+  grid-area: 1/1;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  padding: 20px;
+  transition: opacity 0.3s;
+}
+.products-list a:hover .product-overlay {
+  opacity: 1;
+}
+.product-overlay span {
+  margin: auto;
+  /* width: 100%; */
+}
+.product-footer {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.product-footer .woocommerce-Price-amount bdi,
+.product-footer span.woocommerce-Price-currencySymbol {
+  font-size: 1.5rem !important;
+  line-height: 2rem;
+}
+.product-footer del {
+  text-decoration: line-through 2px #d55e5e !important;
+}
+.product-footer del .woocommerce-Price-amount bdi,
+.product-footer del span.woocommerce-Price-currencySymbol {
+  font-size: 1.25rem !important;
+}
+.product-footer ins {
+  text-decoration: none;
+}
+
+/* breadcrump */
+.breadcrumb {
+  margin: 20px auto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+.woocommerce-breadcrumb {
+  padding-bottom: 20px !important;
+  border-bottom: 2px solid #e69211;
+}
+
+/* Arquivo */
+.products-archive {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+@media (max-width: 800px) {
+  .products-archive {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Paginação */
+.pagination {
+  margin-top: 40px;
+}
+.pagination .page-numbers {
+  border-radius: 2px;
+  background: #e69211;
+  color: #fff;
+  padding: 4px 10px;
+}
+.pagination span.page-numbers {
+  background: #d55e5e;
+}
+.pagination .next,
+.pagination .prev {
+  background: #fff;
+  color: #000;
+}
+
+/* Ordem */
+
+.woocommerce-ordering {
+  margin-bottom: 20px;
+  margin-left: auto;
+  float: none !important;
+}
+.woocommerce-ordering select {
+  font-size: 1rem;
+}
