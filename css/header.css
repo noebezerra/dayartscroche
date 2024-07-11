@@ -118,10 +118,7 @@
 
 /* Menu categorias */
 .menu-categorias {
-  /* background: #f3b95f; */
-  /* position: relative; */
-  /* border-top: 1px solid #e69211; */
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 .menu-categorias ul {
   display: flex;
