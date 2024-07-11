@@ -26,14 +26,16 @@
   // $data['vendidos'] = format_products($products_sales);
 ?>
 
-<section class="container-index about-home" style="text-align: center">
+<section class="container-index about-home">
+  <img src="<?php echo get_stylesheet_directory_uri() . '/img/tecido.png'; ?>" alt="">
   <div>
-    <img src="<?php echo get_stylesheet_directory_uri().'/img/icons/hand.svg'; ?>" alt="">
-    <p>Peças feitas a mão</p>
-  </div>
-  <div>
-    <img src="<?php echo get_stylesheet_directory_uri().'/img/icons/parts.svg' ?>" alt="">
-    <p>Sob demanda</p>
+    <h3>Peças únicas em crochê criadas para você</h3>
+    <ul>
+      <li><img src="<?php echo get_stylesheet_directory_uri() . '/img/icons/ruler.svg'; ?>" alt=""> sob medida</li>
+      <li><img src="<?php echo get_stylesheet_directory_uri() . '/img/icons/package.svg'; ?>" alt=""> sob demanda</li>
+      <li><img src="<?php echo get_stylesheet_directory_uri() . '/img/icons/hand-palm.svg'; ?>" alt=""> peças feita a mão</li>
+      <li><img src="<?php echo get_stylesheet_directory_uri() . '/img/icons/heart.svg'; ?>" alt=""> feito com amor</li>
+    </ul>
   </div>
 </section>
 <div style="clear: both;"></div>
