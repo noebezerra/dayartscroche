@@ -12,15 +12,15 @@
 <body <?php body_class(); ?>>
 <header class="header">
   <div class="container">
-    <div class="busca">
-      <form action="<?php bloginfo('url'); ?>/shop/" method="get">
-        <input type="text" name="s" id="s" placeholder="Buscar" value="<?php the_search_query(); ?>">
-        <input class="hidden" type="text" name="post_type" value="product">
-        <input id="searchbutton" type="submit" value="Buscar">
-      </form>
-    </div>
-    <a href="/"><img src="<?php echo get_stylesheet_directory_uri().'/img/dayartscroche-logo.svg'; ?>" alt=""></a>
+    <a href="/"><img id="logo" src="<?php echo get_stylesheet_directory_uri().'/img/dayartscroche-logo.svg'; ?>" alt=""></a>
     <nav class="conta">
+      <div class="busca">
+        <form action="<?php bloginfo('url'); ?>/shop/" method="get">
+          <input type="text" name="s" id="s" value="<?php the_search_query(); ?>">
+          <input class="hidden" type="text" name="post_type" value="product">
+          <input id="searchbutton" type="submit" value="Buscar">
+        </form>
+      </div>
       <a href="/minha-conta" class="minha-conta">Minha conta</a>
       <a href="/carrinho" class="carrinho">Carrinho
         <?php if ($cart_count = WC()->cart->get_cart_contents_count()): ?>
@@ -30,7 +30,7 @@
     </nav>
   </div>
 </header>
-<div class="sep-detail"></div>
+<!-- <div class="sep-detail"></div> -->
 <?php
   wp_nav_menu([
     'menu' => 'categorias',
